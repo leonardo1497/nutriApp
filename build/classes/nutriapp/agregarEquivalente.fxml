@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nutriapp.AgregarEquivalenteController">
+   <children>
+      <AnchorPane layoutX="-7.0" layoutY="-2.0" prefHeight="113.0" prefWidth="1006.0" style="-fx-background-color: #b5ff7d;">
+         <children>
+            <Label layoutX="337.0" layoutY="22.0" text="Agregar Equivalente" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="atrasBTN" layoutX="35.0" layoutY="17.0" onAction="#atrasEvento" prefHeight="80.0" prefWidth="63.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="62.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/previous.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXComboBox fx:id="tipoEquivalente" focusColor="#00ad7c" layoutX="368.0" layoutY="174.0" onAction="#mostarEntradas" prefHeight="44.0" prefWidth="263.0" promptText="Tipo de equivalente" unFocusColor="#52d681" />
+      <JFXTextField fx:id="nombreE" focusColor="#00ad7c" layoutX="530.0" layoutY="285.0" prefHeight="38.0" prefWidth="323.0" promptText="Nombre" unFocusColor="#52d681" visible="false" />
+      <JFXComboBox fx:id="tipoUnidadE" focusColor="#00ad7c" layoutX="160.0" layoutY="285.0" prefHeight="44.0" prefWidth="214.0" promptText="Tipo de unidad" unFocusColor="#52d681" visible="false" />
+      <JFXTextField fx:id="energiaE" focusColor="#00ad7c" layoutX="160.0" layoutY="400.0" promptText="energía(kcal) por unidad" unFocusColor="#52d681" visible="false" />
+      <JFXTextField fx:id="proteinaE" focusColor="#00ad7c" layoutX="530.0" layoutY="400.0" promptText="proteína por unidad" unFocusColor="#52d681" visible="false" />
+      <JFXTextField fx:id="lipidosE" focusColor="#00ad7c" layoutX="160.0" layoutY="525.0" promptText="lípidos por unidad" unFocusColor="#52d681" visible="false" />
+      <JFXTextField fx:id="carbohidratosE" focusColor="#00ad7c" layoutX="530.0" layoutY="525.0" promptText="carbohidratos por unidad" unFocusColor="#52d681" visible="false" />
+      <JFXButton fx:id="guardarBtn" layoutX="843.0" layoutY="558.0" onAction="#guardarEquivalente" text="Guardar" />
+   </children>
+</AnchorPane>

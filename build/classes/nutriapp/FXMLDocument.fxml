@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="principal" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nutriapp.FXMLDocumentController">
+   <children>
+      <JFXDrawer fx:id="drawer" layoutX="-2.0" layoutY="-3.0" prefHeight="650.0" prefWidth="1000.0" />
+      <AnchorPane fx:id="menuAP" prefHeight="650.0" prefWidth="1000.0">
+         <children>
+            <JFXButton fx:id="agregarEquivalenteBT" layoutX="353.0" layoutY="472.0" onAction="#agregarEquivalenteEvent" prefHeight="57.0" prefWidth="319.0" stylesheets="@style.css" text="Agregar equivalente" textAlignment="CENTER" />
+            <JFXButton fx:id="agregarPacienteBT" layoutX="349.0" layoutY="169.0" onAction="#agregarPacienteEvent" prefHeight="57.0" prefWidth="319.0" stylesheets="@style.css" text="Agregar nuevo paciente" textAlignment="CENTER" />
+            <JFXButton fx:id="consultarBT" layoutX="349.0" layoutY="311.0" onAction="#pacienteDietas" prefHeight="57.0" prefWidth="319.0" stylesheets="@style.css" text="Consultar panciente" textAlignment="CENTER" />
+            <AnchorPane prefHeight="113.0" prefWidth="1001.0" style="-fx-background-color: #b5ff7d;">
+               <children>
+                  <Label layoutX="333.0" layoutY="25.0" text="Control de dietas" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

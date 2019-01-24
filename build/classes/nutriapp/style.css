@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/12/2018, 08:07:21 PM
+    Author     : ACER
+*/
+.text-field {
+    -fx-focus-color: #12D974;
+    -fx-font-weight: Bold;
+    -fx-font-size: 15;
+}
+.button{
+    -fx-text-fill: white;
+    -fx-font-weight: Bold;
+    -fx-background-color:  #52d681;
+    -fx-alignment: CENTER;
+    -fx-font-size:18;
+}
+
+.button:hover{
+    -fx-background-color: #00ad7c;
+}
+
+.label{
+    -fx-alignment: CENTER;
+}
+
+.combo-box {
+    -fx-font-weight: Bold;
+    -fx-font-size: 15;
+}
+
+#atrasBTN:hover{
+    -fx-background-color: #52d681;
+}
+
+#atrasBTN, #atrasCrearDieta{
+    -fx-background-color: transparent;
+}
+
+#agregarBtn{
+    -fx-font-size: 15;
+}
+
+.table-view .button{
+    -fx-text-fill:#000000;
+    -fx-font-family: Raleway;
+    -fx-font-weight: Bold;
+    -fx-font-size: 15;
+    -fx-background-color: rgba(17, 187, 217, 0.2);
+}
